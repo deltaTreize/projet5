@@ -17,18 +17,18 @@
 	<a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
 </header>
 <main>
-	<div id="banner">
+	<div id="banner" class="banner">
 		<img class="banner-img" id="banner-img" src="./assets/images/slideshow/slide1.jpg" alt="Banner Print-it">
 		<p>Impressions tous formats <span>en boutique et en ligne</span></p>
-		<div class="arrow">
-			<div class="arrow_left"> < </div>
-			<div class="arrow_right"> > </div>
+		<div class="arrows">
+			<div class="arrow left" onclick="handleChange(-1)">&#x3008</div>
+			<div class="arrow right" onclick="handleChange(1)">&#x3009</div>
 		</div>
 		<div class="dots">
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
+			<div class="dot0 dot dot_selected"></div>
+			<div class="dot1 dot"></div>
+			<div class="dot2 dot"></div>
+			<div class="dot3 dot"></div>
 		</div>
 	</div>
 	<section id="about-us" class="container">
