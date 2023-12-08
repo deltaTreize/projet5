@@ -25,11 +25,19 @@ const slides = [
   },
 ];
 
-function handleChange(count) {
+function handleChangeArrow(count) {
   dotsArray[i].classList.remove("dot_selected");
   i = i + count;
   if (i >= slides.length) { i = 0};
   if (i < 0) { i= slides.length -1};
+  dotsArray[i].classList.add("dot_selected");
+  bannerImg.src = slides[i].image;
+  bannerP.innerHTML = slides[i].tagLine;
+}
+
+function handleChangeDot(count) {
+  dotsArray[i].classList.remove("dot_selected");
+  i=count;
   dotsArray[i].classList.add("dot_selected");
   bannerImg.src = slides[i].image;
   bannerP.innerHTML = slides[i].tagLine;
