@@ -141,10 +141,10 @@ header {
 	font-weight: 800;
 	cursor: pointer;
 }
-.right {
+.arrow_right {
 	right: 10px;
 }
-.left {
+.arrow_left {
 	left: 10px;
 }
 
